@@ -328,11 +328,11 @@
 	};
 
 
-	// testimonials
-	var testimonialsAnimate = function() {
+	// teachers
+	var teachersAnimate = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {	
-			$('#fh5co-testimonials .to-animate').each(function( k ) {
+		if ( $('#fh5co-teachers').length > 0 ) {	
+			$('#fh5co-teachers .to-animate').each(function( k ) {
 				
 				var el = $(this);
 				
@@ -344,13 +344,13 @@
 		}
 
 	};
-	var testimonialsWayPoint = function() {
+	var teachersWayPoint = function() {
 
-		if ( $('#fh5co-testimonials').length > 0 ) {
-			$('#fh5co-testimonials').waypoint( function( direction ) {
+		if ( $('#fh5co-teachers').length > 0 ) {
+			$('#fh5co-teachers').waypoint( function( direction ) {
 										
 				
-					setTimeout(testimonialsAnimate, 200);
+					setTimeout(teachersAnimate, 200);
 					
 					
 					$(this.element).addClass('animated');
@@ -439,7 +439,38 @@
 
 
 	
-	
+		// testimonials1
+	var testimonials1Animate = function() {
+
+		if ( $('#fh5co-testimonials1').length > 0 ) {	
+			$('#fh5co-testimonials1 .to-animate').each(function( k ) {
+				
+				var el = $(this);
+				
+				setTimeout ( function () {
+					el.addClass('fadeInUp animated');
+				},  k * 200, 'easeInOutExpo' );
+				
+			});
+		}
+
+	};
+	var testimonials1WayPoint = function() {
+
+		if ( $('#fh5co-testimonials1').length > 0 ) {
+			$('#fh5co-testimonials1').waypoint( function( direction ) {
+										
+				
+					setTimeout(testimonials1Animate, 200);
+					
+					
+					$(this.element).addClass('animated');
+						
+			
+			} , { offset: '95%' } );
+		}
+
+	};
 
 	// Document on load.
 	$(function(){
@@ -454,7 +485,8 @@
 		teamWayPoint();
 		servicesWayPoint();
 		featuresWayPoint();
-		testimonialsWayPoint();
+		teachersWayPoint();
+		testimonials1WayPoint();
 		pricingWayPoint();
 		pressWayPoint();
 
