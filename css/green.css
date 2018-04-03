@@ -17,7 +17,7 @@ body {
   font-size: 16px;
   line-height: 1.8;
   color: #333333;
-  color: #7f7f7f;
+  color: black;
   background: #fff;
   height: 100%;
   position: relative;
@@ -216,7 +216,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 28px 0 0 15px;
   float: left;
   letter-spacing: 2px;
-  color: #adadad;
+  color: black;
 }
 #fh5co-header .navbar-default .brand-slogan em {
   color: #008100;
@@ -238,7 +238,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-heading h2 {
   font-size: 50px;
   font-weight: 300;
-  color: #444;
+  color: black;
   text-transform: uppercase;
   position: relative;
   display: block;
@@ -264,7 +264,7 @@ h1, h2, h3, h4, h5, h6 {
 .section-heading h3 {
   font-weight: 300;
   line-height: 1.5;
-  color: #929292;
+  color: black;
 }
 @media screen and (max-width: 768px) {
   .section-heading h3 {
@@ -477,7 +477,7 @@ h1, h2, h3, h4, h5, h6 {
   padding: 30px;
   background: #fff;
   text-align: center;
-  color: #7f7f7f;
+  color: black;
   margin-bottom: 70px;
   position: relative;
 }
@@ -772,7 +772,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #footer {
   padding: 50px 0;
-  color: #7f7f7f;
+  color: black;
 }
 #footer .copyright {
   margin-bottom: 0px;
